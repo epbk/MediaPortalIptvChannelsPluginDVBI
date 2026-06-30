@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ServiceList xmlns="urn:dvb:metadata:servicediscovery:2024" xmlns:tva="urn:tva:metadata:2024" xmlns:mpeg7="urn:tva:mpeg7:2008" xmlns:dvbi-types="urn:dvb:metadata:servicediscovery-types:2023" xmlns:ns5="urn:dvb:metadata:servicediscovery:2022b" xmlns:hls="vnd:apple:mpegurl" xmlns:ns7="urn:dvb:metadata:servicediscovery:2023" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="tag:vantage.eu.2026" version="2" xml:lang="en">
+    <Name>Vantage</Name>
+    <ProviderName>Vantage</ProviderName>
+    <ContentGuideSourceList>
+        <ContentGuideSource CGSID="xmltv">
+            <Name>Xmltv</Name>
+            <ProviderName>Vantage</ProviderName>
+            
+            <!-- Not part of the official DVB-I specification -->
+            <OtherInfoEndpoint extensionName="xmltv">
+                <UriBasedLocation contentType="application/xml">
+                    <dvbi-types:URI>https://vantagetv.eu/epg.xml</dvbi-types:URI>
+                </UriBasedLocation>
+            </OtherInfoEndpoint>
+            
+        </ContentGuideSource>
+    </ContentGuideSourceList>
+    <Service version="1">
+        <UniqueIdentifier>tag:dvbi.vantage:2026:vmusic</UniqueIdentifier>
+        <ServiceInstance priority="1">
+            <ContentAttributes>
+                <VideoAttributes>
+                    <tva:Coding href="urn:dvb:metadata:cs:VideoCodecCS:2022:1.4.14"/>
+                    <tva:HorizontalSize>1920</tva:HorizontalSize>
+                    <tva:VerticalSize>1080</tva:VerticalSize>
+                    <tva:AspectRatio>16:9</tva:AspectRatio>
+                    <tva:FrameRate>50</tva:FrameRate>
+                </VideoAttributes>
+            </ContentAttributes>
+            <OtherDeliveryParameters xsi:type="hls:m3u8RefType" extensionName="vnd.apple.mpegurl">
+                <hls:UriBasedLocation contentType="application/vnd.apple.mpegurl">
+                    <dvbi-types:URI>https://hls.vantagetv.ee/vmusic_stream/main_stream.m3u8</dvbi-types:URI>
+                </hls:UriBasedLocation>
+            </OtherDeliveryParameters>
+        </ServiceInstance>
+        <ServiceName>Vantage Music</ServiceName>
+        <ProviderName>Vantage</ProviderName>
+        <ServiceType href="urn:dvb:metadata:cs:ServiceTypeCS:2019:linear"/>
+        <ContentGuideSourceRef>xmltv</ContentGuideSourceRef>
+        <ContentGuideServiceRef>vmusic</ContentGuideServiceRef>
+    </Service>
+    <Service version="1">
+        <UniqueIdentifier>tag:dvbi.vantage:2026:vrock</UniqueIdentifier>
+        <ServiceInstance priority="1">
+            <ContentAttributes>
+                <VideoAttributes>
+                    <tva:Coding href="urn:dvb:metadata:cs:VideoCodecCS:2022:1.4.14"/>
+                    <tva:HorizontalSize>1920</tva:HorizontalSize>
+                    <tva:VerticalSize>1080</tva:VerticalSize>
+                    <tva:AspectRatio>16:9</tva:AspectRatio>
+                    <tva:FrameRate>50</tva:FrameRate>
+                </VideoAttributes>
+            </ContentAttributes>        
+            <OtherDeliveryParameters xsi:type="hls:m3u8RefType" extensionName="vnd.apple.mpegurl">
+                <hls:UriBasedLocation contentType="application/vnd.apple.mpegurl">
+                    <dvbi-types:URI>https://hls.vantagetv.ee/vrock_stream/main_stream.m3u8</dvbi-types:URI>
+                </hls:UriBasedLocation>
+            </OtherDeliveryParameters>
+        </ServiceInstance>
+        <ServiceName>Vantage Rock</ServiceName>
+        <ProviderName>Vantage</ProviderName>
+        <ServiceType href="urn:dvb:metadata:cs:ServiceTypeCS:2019:linear"/>
+        <ContentGuideSourceRef>xmltv</ContentGuideSourceRef>
+        <ContentGuideServiceRef>vrock</ContentGuideServiceRef>
+    </Service>
+    <Service version="1">
+        <UniqueIdentifier>tag:dvbi.vantage:2026:vdance</UniqueIdentifier>
+        <ServiceInstance priority="1">
+            <ContentAttributes>
+                <VideoAttributes>
+                    <tva:Coding href="urn:dvb:metadata:cs:VideoCodecCS:2022:1.4.14"/>
+                    <tva:HorizontalSize>1920</tva:HorizontalSize>
+                    <tva:VerticalSize>1080</tva:VerticalSize>
+                    <tva:AspectRatio>16:9</tva:AspectRatio>
+                    <tva:FrameRate>50</tva:FrameRate>
+                </VideoAttributes>
+            </ContentAttributes>        
+            <OtherDeliveryParameters xsi:type="hls:m3u8RefType" extensionName="vnd.apple.mpegurl">
+                <hls:UriBasedLocation contentType="application/vnd.apple.mpegurl">
+                    <dvbi-types:URI>https://hls.vantagetv.ee/vdance_stream/main_stream.m3u8</dvbi-types:URI>
+                </hls:UriBasedLocation>
+            </OtherDeliveryParameters>
+        </ServiceInstance>
+        <ServiceName>Vantage Dance</ServiceName>
+        <ProviderName>Vantage</ProviderName>
+        <ServiceType href="urn:dvb:metadata:cs:ServiceTypeCS:2019:linear"/>
+        <ContentGuideSourceRef>xmltv</ContentGuideSourceRef>
+        <ContentGuideServiceRef>vdance</ContentGuideServiceRef>
+    </Service>
+    <Service version="1">
+        <UniqueIdentifier>tag:dvbi.vantage:2026:vclassic</UniqueIdentifier>
+        <ServiceInstance priority="1">
+            <ContentAttributes>
+                <VideoAttributes>
+                    <tva:Coding href="urn:dvb:metadata:cs:VideoCodecCS:2022:1.4.14"/>
+                    <tva:HorizontalSize>1920</tva:HorizontalSize>
+                    <tva:VerticalSize>1080</tva:VerticalSize>
+                    <tva:AspectRatio>16:9</tva:AspectRatio>
+                    <tva:FrameRate>50</tva:FrameRate>
+                </VideoAttributes>
+            </ContentAttributes>
+            <OtherDeliveryParameters xsi:type="hls:m3u8RefType" extensionName="vnd.apple.mpegurl">
+                <hls:UriBasedLocation contentType="application/vnd.apple.mpegurl">
+                    <dvbi-types:URI>https://hls.vantagetv.ee/vclassic_stream/main_stream.m3u8</dvbi-types:URI>
+                </hls:UriBasedLocation>
+            </OtherDeliveryParameters>
+        </ServiceInstance>
+        <ServiceName>Vantage Classic</ServiceName>
+        <ProviderName>Vantage</ProviderName>
+        <ServiceType href="urn:dvb:metadata:cs:ServiceTypeCS:2019:linear"/>
+        <ContentGuideSourceRef>xmltv</ContentGuideSourceRef>
+        <ContentGuideServiceRef>vclassic</ContentGuideServiceRef>
+    </Service>
+</ServiceList>
