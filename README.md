@@ -1,4 +1,4 @@
-MediaPortalIptvChannelsPluginDVBI is DVB-I provider plugin for MediaPortalIptvChannels plugin.
+MediaPortal-Iptv-Channels-Plugin-DVBI is DVB-I provider plugin for MediaPortal-Iptv-Channels plugin.
 
 Main features:
 - DVB-I client: search for available Service Lists (in Central Service Registry or Multicast DNS), automatically create corresponding MediaPortal TV Channels,
